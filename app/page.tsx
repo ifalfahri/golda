@@ -1,10 +1,8 @@
 import CoffeeScroll from "@/components/CoffeeScroll";
-import {
-  BentoGrid,
-  Testimonial,
-  Stats,
-  Footer,
-} from "@/components/LandingSections";
+import BentoGrid from "@/components/BentoGrid";
+import Testimonial from "@/components/Testimonial";
+import Stats from "@/components/Stats";
+import Footer from "@/components/Footer";
 import AboutReveal from "@/components/AboutReveal";
 
 export default function Home() {

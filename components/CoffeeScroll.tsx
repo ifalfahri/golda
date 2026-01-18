@@ -1,6 +1,6 @@
 "use client";
 
-import { useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useScroll, useTransform, useMotionValueEvent } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 
@@ -283,4 +283,4 @@ function ScrollOverlays({ progress }: { progress: any }) {
   );
 }
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
