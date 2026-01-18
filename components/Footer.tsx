@@ -1,7 +1,6 @@
 "use client";
 
 import Reveal from "@/components/Reveal";
-
 export default function Footer() {
   return (
     <footer className="bg-neutral-950 py-24 sticky bottom-0 px-4 md:px-8 border-t border-white/5">
@@ -19,8 +18,13 @@ export default function Footer() {
             <a href="#" className="hover:text-amber-500 transition-colors">
               TWITTER
             </a>
-            <a href="#" className="hover:text-amber-500 transition-colors">
-              CONTACT
+            <a
+              href="https://github.com/ifalfahri/golda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-amber-500 transition-colors"
+            >
+              GITHUB
             </a>
           </div>
         </div>

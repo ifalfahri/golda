@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import clsx from "clsx";
+import NotesModal from "./NotesModal";
 
 const menuItems = [
   { title: "HOME", href: "#" },
@@ -12,13 +13,26 @@ const menuItems = [
   { title: "STORY", href: "#" },
 ];
 
-const socialLinks = ["Instagram", "Twitter", "Facebook"];
+const socialLinks = ["Instagram", "Twitter", "Notes"];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isNotesOpen, setIsNotesOpen] = useState(false);
+
+  // Lock scroll when menu is open
+  // We use simple document.body style manipulation
+  if (typeof document !== "undefined") {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }
 
   return (
     <>
+      <NotesModal isOpen={isNotesOpen} onClose={() => setIsNotesOpen(false)} />
+
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -92,13 +106,17 @@ export default function Navbar() {
                 </h3>
                 <div className="flex flex-col gap-2 md:items-end">
                   {socialLinks.map((link) => (
-                    <a
+                    <button
                       key={link}
-                      href="#"
-                      className="text-xl font-medium text-white hover:text-amber-500 transition-colors"
+                      onClick={() => {
+                        if (link === "Notes") {
+                          setIsNotesOpen(true);
+                        }
+                      }}
+                      className="text-xl font-medium text-white hover:text-amber-500 transition-colors text-right"
                     >
                       {link}
-                    </a>
+                    </button>
                   ))}
                 </div>
               </motion.div>
