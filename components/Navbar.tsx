@@ -22,7 +22,7 @@ export default function Navbar() {
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-8 right-8 z-[60] flex h-12 w-12 flex-col items-center justify-center gap-1.5 rounded-full bg-neutral-900/50 backdrop-blur-md transition-colors hover:bg-neutral-800"
+        className="fixed top-8 right-8 z-60 flex h-12 w-12 flex-col items-center justify-center gap-1.5 rounded-full bg-neutral-900/50 backdrop-blur-md transition-colors hover:bg-neutral-800"
       >
         <span
           className={clsx(
@@ -45,7 +45,7 @@ export default function Navbar() {
       </button>
 
       {/* Logo (Fixed top left) */}
-      <div className="fixed top-8 left-8 z-[60] mix-blend-difference">
+      <div className="fixed top-8 left-8 z-60 mix-blend-difference">
         <h1 className="text-2xl font-black tracking-tighter text-white">
           GOLDA.
         </h1>
