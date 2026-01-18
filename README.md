@@ -5,9 +5,6 @@ Built to demonstrate advanced scrollytelling techniques, smooth animations, and 
 
 **[View Demo](https://goldacoffee.vercel.app)**
 
-![Golda Preview](public/screenshot.png)
-_(Note: Add a screenshot to public/screenshot.png if you want one here)_
-
 ## Features
 
 - **Cinematic Scrollytelling**: Image sequence powered by HTML5 Canvas and scroll synchronization.
