@@ -4,7 +4,7 @@ import { useScroll, useTransform, useMotionValueEvent } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 
-const FRAME_COUNT = 240;
+const FRAME_COUNT = 192;
 
 export default function CoffeeScroll() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -141,7 +141,7 @@ export default function CoffeeScroll() {
         const current = currentIndex.get();
         const safeIndex = Math.min(
           Math.max(Math.floor(current), 1),
-          FRAME_COUNT
+          FRAME_COUNT,
         );
         if (!isLoading && images.length > 0) {
           renderFrame(safeIndex);
@@ -168,7 +168,7 @@ export default function CoffeeScroll() {
         <div
           className={clsx(
             "pointer-events-none absolute inset-0 flex items-end pb-20 justify-center bg-black transition-opacity duration-500",
-            isLoading ? "opacity-100" : "opacity-0"
+            isLoading ? "opacity-100" : "opacity-0",
           )}
         >
           <div className="text-center font-sans">
@@ -207,14 +207,14 @@ function ScrollOverlays({ progress }: { progress: any }) {
   const opacitySlogan1 = useTransform(
     progress,
     [0.15, 0.25, 0.35, 0.45],
-    [0, 1, 1, 0]
+    [0, 1, 1, 0],
   );
   const ySlogan1 = useTransform(progress, [0.15, 0.45], [50, -50]);
 
   const opacitySlogan2 = useTransform(
     progress,
     [0.45, 0.55, 0.65, 0.75],
-    [0, 1, 1, 0]
+    [0, 1, 1, 0],
   );
   const ySlogan2 = useTransform(progress, [0.45, 0.75], [50, -50]);
 
