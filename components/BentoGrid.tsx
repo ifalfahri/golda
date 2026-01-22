@@ -27,7 +27,7 @@ export default function BentoGrid() {
               </p>
             </div>
             <img
-              src="/bento-1.png"
+              src="/bento-1.webp"
               alt="Cold Brew"
               className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -45,7 +45,7 @@ export default function BentoGrid() {
               Sourced from the highlands of Brazil.
             </p>
             <img
-              src="/bento-2.png"
+              src="/bento-2.webp"
               alt="Beans"
               className="absolute inset-0 h-full w-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110"
             />
@@ -77,7 +77,7 @@ export default function BentoGrid() {
               </p>
             </div>
             <img
-              src="/bento-3.png"
+              src="/bento-3.webp"
               alt="Nitro Pour"
               className="absolute inset-0 h-full w-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-105"
             />
