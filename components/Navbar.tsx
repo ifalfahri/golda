@@ -36,24 +36,25 @@ export default function Navbar() {
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
+        aria-label="Toggle Menu"
         className="fixed top-8 right-8 z-60 flex h-12 w-12 flex-col items-center justify-center gap-1.5 rounded-full bg-neutral-900/50 backdrop-blur-md transition-colors hover:bg-neutral-800"
       >
         <span
           className={clsx(
             "block h-0.5 w-6 bg-white transition-transform duration-300",
-            isOpen ? "translate-y-2 rotate-45" : ""
+            isOpen ? "translate-y-2 rotate-45" : "",
           )}
         />
         <span
           className={clsx(
             "block h-0.5 w-6 bg-white transition-opacity duration-300",
-            isOpen ? "opacity-0" : ""
+            isOpen ? "opacity-0" : "",
           )}
         />
         <span
           className={clsx(
             "block h-0.5 w-6 bg-white transition-transform duration-300",
-            isOpen ? "-translate-y-2 -rotate-45" : ""
+            isOpen ? "-translate-y-2 -rotate-45" : "",
           )}
         />
       </button>

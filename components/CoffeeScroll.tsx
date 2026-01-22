@@ -273,7 +273,10 @@ function ScrollOverlays({ progress }: { progress: any }) {
           <h2 className="mb-8 text-5xl font-bold tracking-tighter text-white">
             Ready to Sip?
           </h2>
-          <button className="group relative overflow-hidden rounded-full bg-amber-600 px-8 py-4 text-lg font-bold text-black transition-transform hover:scale-105 active:scale-95">
+          <button
+            aria-label="Order Golda Coffee Now"
+            className="group relative overflow-hidden rounded-full bg-amber-600 px-8 py-4 text-lg font-bold text-black transition-transform hover:scale-105 active:scale-95"
+          >
             <span className="relative z-10">ORDER NOW</span>
             <div className="absolute inset-0 z-0 scale-x-0 bg-white transition-transform duration-300 group-hover:scale-x-100 origin-left" />
           </button>
