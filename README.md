@@ -5,7 +5,7 @@ Built to demonstrate advanced scrollytelling techniques, smooth animations, and 
 
 **[View Demo](https://goldacoffee.vercel.app)**
 
-![Golda Preview](https://res.cloudinary.com/dyjxcujz4/image/upload/v1769226000/github/golda.gif)
+![Golda Preview](https://res.cloudinary.com/dyjxcujz4/image/upload/v1769226000/github/golda.gif?v=1)
 
 ## Features
 
